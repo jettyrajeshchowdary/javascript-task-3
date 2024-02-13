@@ -1,0 +1,41 @@
+<html >
+<head>
+    <link rel="stylesheet" href="styles.css">
+  <title>Calculator App</title>
+</head>
+<body>
+  <h1>calculator</h1>
+  <div class="container">
+    <h1>Calculator</h1>
+    <div class="calculator">
+      <input type="text" id="display" class="form-control mb-2" disabled>
+      <div class="row">
+        <button onclick="appendToDisplay('7')" class="btn btn-primary col">7</button>
+        <button onclick="appendToDisplay('8')" class="btn btn-primary col">8</button>
+        <button onclick="appendToDisplay('9')" class="btn btn-primary col">9</button>
+        <button onclick="appendToDisplay('+')" class="btn btn-primary col">+</button>
+      </div>
+      <div class="row">
+        <button onclick="appendToDisplay('4')" class="btn btn-primary col">4</button>
+        <button onclick="appendToDisplay('5')" class="btn btn-primary col">5</button>
+        <button onclick="appendToDisplay('6')" class="btn btn-primary col">6</button>
+        <button onclick="appendToDisplay('-')" class="btn btn-primary col">-</button>
+      </div>
+      <div class="row">
+        <button onclick="appendToDisplay('1')" class="btn btn-primary col">1</button>
+        <button onclick="appendToDisplay('2')" class="btn btn-primary col">2</button>
+        <button onclick="appendToDisplay('3')" class="btn btn-primary col">3</button>
+        <button onclick="appendToDisplay('*')" class="btn btn-primary col">*</button>
+      </div>
+      <div class="row">
+        <button onclick="appendToDisplay('0')" class="btn btn-primary col">0</button>
+        <button onclick="clearDisplay()" class="btn btn-danger col">C</button>
+        <button onclick="calculateResult()" class="btn btn-success col">=</button>
+        <button onclick="appendToDisplay('/')" class="btn btn-primary col">/</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
